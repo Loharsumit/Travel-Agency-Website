@@ -1,0 +1,335 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: 'Poppins', sans-serif;
+
+}
+.navbar{
+	width: 100%;
+	height: 80px;
+    display: flex;
+    background-color: #212121;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: #fff;
+    
+}
+
+.menu ul{
+	display: flex;
+	align-items: center;
+}
+
+.menu li{
+    transition-property: transform;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+	transition-delay: 0s;
+}
+
+.menu li:hover{
+	transform: translateY(-5px);
+}
+.menu ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 12px;
+	letter-spacing: 2px;
+	font-size: 18px;
+}
+.menu ul li a:hover{
+	border-bottom: 4px solid #000;
+	transition: 0.4s;
+} 
+.signup{
+    transition-property: transform;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+	transition-delay: 0s;
+}
+.signup:hover{
+	transform: translateY(-5px);
+}
+.signup a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 12px;
+	padding: 12px 30px;
+	border: 2px solid #fff;
+}
+.signup a:hover{
+	background-color: #fff;
+    color: #000;
+	transition: 0.3s;
+	transition-timing-function: ease;
+}
+
+.body{
+    width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+    overflow-y: scroll;
+}
+.heading{
+    /* font-weight: bolder; */
+    text-align: center;
+    margin-top: 50px;
+    color: #212121;
+}
+.heading h1{
+    font-size: 150px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	text-decoration: underline;
+}
+.service{
+    width: 80%;
+	display: flex;
+	justify-content: space-around;
+    margin: auto;
+    padding-bottom: 45px;
+}
+.options{
+    justify-content: space-around;
+	align-items: center;
+    padding: 20px;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    
+}
+.options:hover{
+    transform: translateY(-15px);
+}
+.head{
+	/* background-color: orangered; */
+    background-position: center;
+	border-radius: 20px;
+	background-size: cover; 
+	background-repeat: no-repeat;
+    /* text-align: center;
+    padding: 10px; */
+    /* border: 50px; */
+}
+.head:hover{
+	box-shadow: 0 0 8px rgba(255, 255, 255, 1);
+}
+.head img{
+	width: 300px;
+	height: 250px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+.containts{
+	background-color: #212121;
+    color: #fff;
+    opacity: 0.8;
+    width: 300px;
+    height: 250px; 
+    /* font-weight: 600; */
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+    padding: 20px;
+}
+/* .containts:hover{
+	box-shadow: 0 0 8px rgba(255, 255, 255, 1);
+} */
+.containts h2{
+      font-weight: bolder;
+      font-size: 30px;
+      color: #fff;
+}
+
+.footer{
+	width: 100%;
+	height: auto;
+	display: flex;
+    background-color: #212121;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer a{
+	text-decoration: none;
+	color: #fff;
+	/* font-size: 18px; */
+	/* font-weight: bold; */
+}
+.footer a:hover{
+	text-decoration: underline;
+	transition: 0.4s;
+}
+#footer{
+	margin: 10px;
+	padding-left: 180px;
+}
+#footer a{
+	padding: 5px;
+	justify-items: center;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#footer footeritems{
+	padding-top: 40px;
+}
+
+#logo{
+    width: 30px;
+    height: 30px;
+	background-color: #fff;
+    border-radius: 20px;
+    margin-left: 60px;
+    /* padding: 5px; */
+	outline: 0.1rem solid #000;
+	outline-offset: -1.5px;
+}
+#logo:hover{
+    background-color: #fff;
+    /* box-shadow: 0 0 20px rgb(255, 253, 253);
+    transform: translateY(-2px); */
+
+	outline-color: #fff;
+}
+.icons{
+	width: 280px;
+	margin-left: 40%;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+	.navbar{
+		width: 100%;
+		height: 120px;
+		margin: auto;
+        position: relative;
+	}
+    .menu{
+        position: absolute;
+        left: -10px;
+    }
+    .logo h1{
+        position: absolute;
+        top: 2px;
+        left: 160px;
+    }
+
+    .signup{
+        position: absolute;
+        top: 70px;
+    }
+
+	.menu ul li a{
+		padding: 2px 3px;
+		letter-spacing: 1px;
+		font-size: 13px;
+	}
+	.signup a{
+		font-size: 13px;
+		font-weight: 200;
+		border-radius: 7px;
+		padding: 1px 10px;
+		border: 1px solid #fff;
+	}
+	
+	.body {
+		overflow-y: scroll;
+	}
+	.heading{
+		text-align: center;
+		margin-top: 50px;
+		color: #212121;
+	}
+	.heading h1{
+		font-size: 30px;
+	}
+
+	.service{
+		width: 80%;
+		padding-bottom: 17px;
+		/* position: relative; */
+	}
+	.options{
+		padding: 5px;
+	}
+	.options:hover{
+		transform: translateY(-10px);
+	}
+	.head{
+		border-radius: 10px;
+		/*padding: 10px; */
+		/* border: 50px; */
+	}
+	#placeImg{
+		width: 90px;
+		height: 50px;
+	}
+	.head img{
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+	.containts{
+		width: 90px;
+		height:90px; 
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		padding: 4px;
+	}
+	
+	.containts h2{
+		  font-weight: 400;
+		  font-size: 10px;
+	}
+	.containts p{
+		  font-weight: 300;
+		  font-size: 5px;
+	}
+
+	.footer{
+		width: 100%;
+		height: 270px;
+		position: relative;
+	}
+	
+	.footer a{
+		font-size: 10px;
+	}
+	
+	#footer{
+		margin: 10px;
+		padding-left: 10px;
+	}
+
+	#footer a{
+		padding: 5px;
+		justify-items: center;
+		justify-content: space-around;
+		align-items: center;
+	}
+	
+	#footer footeritems{
+		padding-top: 40px;
+	}
+	
+	#logo{
+		width: 20px;
+		height: 20px;
+		border-radius: 20px;
+		margin-left: 10px;
+	}
+	.icons{
+		width: 280px;
+		position: absolute;
+		top: 140px;
+		left: 1px;
+	}
+}
